@@ -311,7 +311,7 @@
             #endregion
 
             #region 19- Write a Program to Print One Dimensional Array in Reverse Order
-
+            /*
             Console.Write("Enter the number of elements in the array: ");
             int n = int.Parse(Console.ReadLine());
 
@@ -329,7 +329,9 @@
             {
                 Console.Write(array[i] + " ");
             }
+            */
             #endregion
+
         }
     }
 }
