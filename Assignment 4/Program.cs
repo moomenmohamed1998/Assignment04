@@ -140,29 +140,42 @@
             */
             #endregion
 
-
             #region 8- . Write a program that prints an identity matrix using for loop, in other words takes a value n from the user and shows the identity table of size n * n.
-            Console.Write("Enter the size of the matrix (n): ");
-            int N = int.Parse(Console.ReadLine());
+            /*
+              Console.Write("Enter the size of the matrix (n): ");
+              int N = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-                    if (i == j)
-                    {
-                        Console.Write("1 ");
-                    }
-                    else
-                    {
-                        Console.Write("0 ");
-                    }
-                }
+              for (int i = 0; i < N; i++)
+              {
+                  for (int j = 0; j < N; j++)
+                  {
+                      if (i == j)
+                      {
+                          Console.Write("1 ");
+                      }
+                      else
+                      {
+                          Console.Write("0 ");
+                      }
+                  }
 
-                Console.WriteLine();
-            }
+                  Console.WriteLine();
+              }
+            */
             #endregion
 
+            #region 10- Write C# program that take two string variables and print them as one variable 
+            Console.Write("Enter the first string: ");
+            string first = Console.ReadLine();
+
+            Console.Write("Enter the Last string: ");
+            string Last = Console.ReadLine();
+
+            string Total = first + Last;
+
+            Console.WriteLine(Total);
+
+            #endregion
         }
     }
 }
