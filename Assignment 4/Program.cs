@@ -310,8 +310,25 @@
             */
             #endregion
 
-            #region
+            #region 19- Write a Program to Print One Dimensional Array in Reverse Order
 
+            Console.Write("Enter the number of elements in the array: ");
+            int n = int.Parse(Console.ReadLine());
+
+            int[] array = new int[n];
+
+            Console.WriteLine("Enter the elements of the array:");
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"NUM {i + 1}: ");
+                array[i] = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("\nArray in reverse order:");
+            for (int i = n - 1; i >= 0; i--)
+            {
+                Console.Write(array[i] + " ");
+            }
             #endregion
         }
     }
