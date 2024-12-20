@@ -112,23 +112,46 @@ namespace Demo
             #endregion
 
             #region Styring Builder Methods
-            StringBuilder Massage = new StringBuilder("Welcome");
+            //StringBuilder Massage = new StringBuilder("Welcome");
 
-            Massage.Append("TO Route ");
-            Massage.AppendLine(" Mostafa");
-            Massage.Append("Hany");
-            
-            Massage.Remove(0, 7);
+            //Massage.Append("TO Route ");
+            //Massage.AppendLine(" Mostafa");
+            //Massage.Append("Hany");
 
-            Massage.Insert(0,"Hello ");
-            Console.WriteLine(Massage);
+            //Massage.Remove(0, 7);
 
-            int Age = 10;
-            string Name = "ALi";
+            //Massage.Insert(0,"Hello ");
+            //Console.WriteLine(Massage);
 
-            Massage.AppendFormat("name : {0} ,Age :{1}", Name, Age);
-            Massage.AppendJoin("/","Mosatfa","Hany","Mohamed",2);
-            Console.WriteLine(Massage);
+            //int Age = 10;
+            //string Name = "ALi";
+
+            //Massage.AppendFormat("name : {0} ,Age :{1}", Name, Age);
+            //Massage.AppendJoin("/","Mosatfa","Hany","Mohamed",2);
+            //Console.WriteLine(Massage);
+            #endregion
+
+            #region  Array 1 D
+            //int[] Numbers = new int[3] { 1, 2, 3 };
+            //int[] numbers = new int[] { 1, 2, 3 };
+            //int[] number = { 1, 2, 3 };
+
+            //Console.WriteLine(number[0]);
+            //Console.WriteLine(number[1]);
+
+            //int[] number = new int[3];
+
+            //for (int i=0; i < number.Length; i++)
+            //{
+            //    number[i] = i + 1;
+
+            //}
+            //for (int i = 0; i < number.Length; i++)
+            //{
+            //    Console.WriteLine(number[i]);
+
+            //}
+
             #endregion
         }
     }
