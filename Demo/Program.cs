@@ -37,17 +37,61 @@
             #endregion
 
             #region While - Do While
-            int Number;
-            bool flag;
-            do
-            {
-                Console.WriteLine("Enter Even Number");
-                //Number = int.Parse(Console.ReadLine());
-                //int.TryParse(Console.ReadLine(), out Number);
-                flag = int.TryParse(Console.ReadLine(), out Number);
-            } while (Number % 2 == 1 || !flag);
+            //int Number;
+            //bool flag;
+            //do
+            //{
+            //    Console.WriteLine("Enter Even Number");
+            //    //Number = int.Parse(Console.ReadLine());
+            //    //int.TryParse(Console.ReadLine(), out Number);
+            //    flag = int.TryParse(Console.ReadLine(), out Number);
+            //} while (Number % 2 == 1 || !flag);
 
-            Console.WriteLine($"{Number} Is Even");
+            //Console.WriteLine($"{Number} Is Even");
+
+            #endregion
+
+            #region String
+
+            //string Name;
+            //Name = new string("Ahmed");
+            //Name = "Ahmed";
+
+            //string Name01 = "Ahmed";
+            //string Name02 = "Ahmed";
+            //Console.WriteLine(Name01);
+            //Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
+
+            //Console.WriteLine(Name02);
+            //Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
+
+
+            string Name01 = "Ahmed";
+            string Name02 = "Ali";
+
+            Console.WriteLine(Name01);
+            Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
+
+            Console.WriteLine(Name02);
+            Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
+
+            Name02 = Name01;
+
+            Console.WriteLine(" ********************** ");
+            Console.WriteLine(Name01);
+            Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
+
+            Console.WriteLine(Name02);
+            Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
+
+            Name01="mostafa";
+
+            Console.WriteLine(" ************* Mostafa ************* ");
+            Console.WriteLine(Name01);
+            Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
+
+            Console.WriteLine(Name02);
+            Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
 
             #endregion
         }
