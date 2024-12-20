@@ -69,6 +69,7 @@
             #endregion
 
             #region 4-Write a program that takes two integers then prints the power
+            /*
             Console.Write("Enter Num01: ");
             string Num01 = Console.ReadLine();
 
@@ -85,7 +86,18 @@
 
                 Console.WriteLine($"{result}");
             }
-         
+         */
+            #endregion
+
+            #region 5- Write a program to allow the user to enter a string and print the REVERSE of it.
+            Console.Write("Enter a Number: ");
+            string input = Console.ReadLine();
+
+            char[] charArray = input.ToCharArray();
+            Array.Reverse(charArray);
+            string reversedNumber = new string(charArray);
+
+            Console.WriteLine($"Reversed Number: {reversedNumber}");
             #endregion
 
         }
