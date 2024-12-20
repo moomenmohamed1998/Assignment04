@@ -153,6 +153,44 @@ namespace Demo
             //}
 
             #endregion
+
+            #region Array 2 D
+
+            //int[,] Marks = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 10, 20, 30, 40, 50 }, { 100, 200, 300, 400, 500, } };
+
+            //Console.WriteLine(Marks.Length);
+            //Console.WriteLine(Marks.Rank);
+            //Console.WriteLine(Marks.GetLength(0));
+            //Console.WriteLine(Marks.GetLength(1));
+
+            //for(int i = 0; i < Marks.GetLength(0); i++)
+            //{
+            //    Console.WriteLine($"Enter Grades Student{i + 1} ");
+            //    for (int K = 0; K < Marks.GetLength(1); K++) 
+            //    {
+            //        Console.Write($"Enter Grades Student[{i+1}]:");
+            //        //Marks[i,K]= int.Parse(Console.ReadLine());
+            //        int.TryParse(Console.ReadLine(), out Marks[i, K]);
+            //    }
+            //}
+
+            //for (int i = 0; i < Marks.GetLength(0); i++)
+            //{
+            //    Console.WriteLine($"Enter Grades Student{i + 1} ");
+            //    for (int K = 0; K < Marks.GetLength(1); K++)
+            //    {
+            //        Console.Write($"Enter Grades Student[{i + 1}]:");
+            //        Console.WriteLine(Marks[i,K]);
+            //    }
+            //}
+
+
+            //for (int i = 0; i < Marks.Length; i++)
+            //{
+            //    Console.WriteLine(Marks[i / Marks.GetLength(1), i % Marks.GetLength(1)]);
+            //}
+
+            #endregion
         }
     }
 }
