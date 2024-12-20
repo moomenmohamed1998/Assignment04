@@ -6,6 +6,7 @@ namespace Demo
     {
         static void Main(string[] args)
         {
+
             #region loop statment
             //for (int i = 1; i <= 10; i++)
             //{
@@ -191,6 +192,25 @@ namespace Demo
             //}
 
             #endregion
+
+            #region Judget Array
+
+            //int[][] numbers = new int[3][];
+            //numbers[0] = new int[3] { 1, 2, 3 };
+            //numbers[1] = new int[2] { 4, 5 };
+            //numbers[2] = new int[1] { 6 };
+
+            //for (int i = 0; i < numbers.Length; i++) 
+            //{
+            //    for (int j = 0; j < numbers[i].Length; i++)
+            //    {
+            //        Console.WriteLine(numbers[i][j]);
+            //    }
+            //}
+
+
+            #endregion
+
         }
     }
 }
