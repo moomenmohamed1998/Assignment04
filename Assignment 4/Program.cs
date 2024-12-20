@@ -202,9 +202,8 @@
             */
             #endregion
 
-
             #region  12- Write a program in C# Sharp to find the sum of all elements of the array.
-
+            /*
             Console.Write("Enter the number of elements in the array: ");
             int X = int.Parse(Console.ReadLine());
 
@@ -225,9 +224,44 @@
 
             Console.WriteLine($"The sum of all elements in the array is: {sum}");
         }
+            */
 
+            #endregion
 
+            #region 15- Write a program in C# Sharp to find maximum and minimum element in an array
+
+            Console.Write("Enter the number of elements in the array: ");
+            int X = int.Parse(Console.ReadLine());
+
+            int[] array = new int[X];
+
+            Console.WriteLine("Enter the elements of the array:");
+            for (int i = 0; i < X; i++)
+            {
+                Console.Write($"Element {i + 1}: ");
+                array[i] = int.Parse(Console.ReadLine());
+            }
+
+            int max = array[0];
+            int min = array[0];
+
+            for (int i = 1; i < X; i++)
+            {
+                if (array[i] > max)
+                {
+                    max = array[i];
+                }
+                if (array[i] < min)
+                {
+                    min = array[i];
+                }
+            }
+
+            Console.WriteLine($"The max: {max}");
+            Console.WriteLine($"The min: {min}");
+        
         #endregion
+
     }
     }
 }
