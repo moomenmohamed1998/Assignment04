@@ -97,20 +97,38 @@ namespace Demo
 
             #endregion
 
-
-
             #region Styring Builder
-            StringBuilder Massage;
-            Massage = new StringBuilder("Ahmed");
+            //StringBuilder Massage;
+            //Massage = new StringBuilder("Ahmed");
 
-            Console.WriteLine(Massage);
-            Console.WriteLine(Massage.GetHashCode());
+            //Console.WriteLine(Massage);
+            //Console.WriteLine(Massage.GetHashCode());
+
+            //Console.WriteLine(" ");
+            //Massage.Append(" Route");
+            //Console.WriteLine(Massage);
+            //Console.WriteLine(Massage.GetHashCode());
+
+            #endregion
+
+            #region Styring Builder Methods
+            StringBuilder Massage = new StringBuilder("Welcome");
+
+            Massage.Append("TO Route ");
+            Massage.AppendLine(" Mostafa");
+            Massage.Append("Hany");
             
-            Console.WriteLine(" ");
-            Massage.Append(" Route");
-            Console.WriteLine(Massage);
-            Console.WriteLine(Massage.GetHashCode());
+            Massage.Remove(0, 7);
 
+            Massage.Insert(0,"Hello ");
+            Console.WriteLine(Massage);
+
+            int Age = 10;
+            string Name = "ALi";
+
+            Massage.AppendFormat("name : {0} ,Age :{1}", Name, Age);
+            Massage.AppendJoin("/","Mosatfa","Hany","Mohamed",2);
+            Console.WriteLine(Massage);
             #endregion
         }
     }
