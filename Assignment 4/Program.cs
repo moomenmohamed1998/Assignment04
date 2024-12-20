@@ -229,7 +229,7 @@
             #endregion
 
             #region 15- Write a program in C# Sharp to find maximum and minimum element in an array
-
+            /*
             Console.Write("Enter the number of elements in the array: ");
             int X = int.Parse(Console.ReadLine());
 
@@ -259,10 +259,61 @@
 
             Console.WriteLine($"The max: {max}");
             Console.WriteLine($"The min: {min}");
-        
-        #endregion
+        */
+            #endregion
 
-    }
+            #region 16- Write a program in C# Sharp to find the second largest element in an array.
+            /*
+            Console.Write("Enter the number of elements in the array: ");
+            int X = int.Parse(Console.ReadLine());
+
+            if (X < 2)
+            {
+                Console.WriteLine("Array must contain at least two elements.");
+                return;
+            }
+
+            int[] array = new int[X];
+
+            Console.WriteLine("Enter the elements of the array:");
+            for (int i = 0; i < X; i++)
+            {
+                Console.Write($"Element {i + 1}: ");
+                array[i] = int.Parse(Console.ReadLine());
+            }
+
+            int largest = int.MinValue;
+            int secondLargest = int.MinValue;
+
+            for (int i = 0; i < X; i++)
+            {
+                if (array[i] > largest)
+                {
+                    secondLargest = largest;
+                    largest = array[i];
+                }
+                else if (array[i] > secondLargest && array[i] != largest)
+                {
+                    secondLargest = array[i];
+                }
+            }
+
+            if (secondLargest == int.MinValue)
+            {
+                Console.WriteLine("There is no second largest element (all elements may be equal).");
+            }
+            else
+            {
+                Console.WriteLine($"The second largest element is: {secondLargest}");
+            }
+
+            */
+            #endregion
+
+            #region
+
+            #endregion
+        }
     }
 }
 
