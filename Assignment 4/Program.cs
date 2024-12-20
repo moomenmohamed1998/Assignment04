@@ -49,21 +49,43 @@
             #endregion
 
             #region 3- Write a program that allows to user to insert number then print all even numbers between 1 to this number
-            Console.Write("Enter a Number: ");
-            string NumberInput = Console.ReadLine();
+            /*
+             Console.Write("Enter a Number: ");
+             string NumberInput = Console.ReadLine();
 
-            if (int.TryParse(NumberInput, out int Num) && Num > 1)
+             if (int.TryParse(NumberInput, out int Num) && Num > 1)
+             {
+                 Console.WriteLine($"Even numbers between 1 and {Num} :");
+                 for (int i = 2; i <= Num; i += 2) 
+                 {
+                     Console.Write(i);
+                     if (i + 2 <= Num)
+                     {
+                         Console.Write(" , "); 
+                     }
+                 }
+             }
+            */
+            #endregion
+
+            #region 4-Write a program that takes two integers then prints the power
+            Console.Write("Enter Num01: ");
+            string Num01 = Console.ReadLine();
+
+            Console.Write("Enter Num02: ");
+            string Num02 = Console.ReadLine();
+
+            if (int.TryParse(Num01, out int baseNumber) && int.TryParse(Num02, out int exponent))
             {
-                Console.WriteLine($"Even numbers between 1 and {Num} :");
-                for (int i = 2; i <= Num; i += 2) 
+                int result = 1;
+                for (int i = 1; i <= exponent; i++)
                 {
-                    Console.Write(i);
-                    if (i + 2 <= Num)
-                    {
-                        Console.Write(" , "); 
-                    }
+                    result *= baseNumber;
                 }
+
+                Console.WriteLine($"{result}");
             }
+         
             #endregion
 
         }
