@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Text;
+
+namespace Demo
 {
     internal class Program
     {
@@ -66,32 +68,48 @@
             //Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
 
 
-            string Name01 = "Ahmed";
-            string Name02 = "Ali";
+            //string Name01 = "Ahmed";
+            //string Name02 = "Ali";
 
-            Console.WriteLine(Name01);
-            Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
+            //Console.WriteLine(Name01);
+            //Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
 
-            Console.WriteLine(Name02);
-            Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
+            //Console.WriteLine(Name02);
+            //Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
 
-            Name02 = Name01;
+            //Name02 = Name01;
 
-            Console.WriteLine(" ********************** ");
-            Console.WriteLine(Name01);
-            Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
+            //Console.WriteLine(" ********************** ");
+            //Console.WriteLine(Name01);
+            //Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
 
-            Console.WriteLine(Name02);
-            Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
+            //Console.WriteLine(Name02);
+            //Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
 
-            Name01="mostafa";
+            //Name01="mostafa";
 
-            Console.WriteLine(" ************* Mostafa ************* ");
-            Console.WriteLine(Name01);
-            Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
+            //Console.WriteLine(" ************* Mostafa ************* ");
+            //Console.WriteLine(Name01);
+            //Console.WriteLine($"name01 HC : {Name01.GetHashCode()}");
 
-            Console.WriteLine(Name02);
-            Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
+            //Console.WriteLine(Name02);
+            //Console.WriteLine($"name01 HC : {Name02.GetHashCode()}");
+
+            #endregion
+
+
+
+            #region Styring Builder
+            StringBuilder Massage;
+            Massage = new StringBuilder("Ahmed");
+
+            Console.WriteLine(Massage);
+            Console.WriteLine(Massage.GetHashCode());
+            
+            Console.WriteLine(" ");
+            Massage.Append(" Route");
+            Console.WriteLine(Massage);
+            Console.WriteLine(Massage.GetHashCode());
 
             #endregion
         }
