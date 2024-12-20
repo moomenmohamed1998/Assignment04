@@ -90,6 +90,7 @@
             #endregion
 
             #region 5- Write a program to allow the user to enter a string and print the REVERSE of it.
+            /*
             Console.Write("Enter a Number: ");
             string input = Console.ReadLine();
 
@@ -98,8 +99,46 @@
             string reversedNumber = new string(charArray);
 
             Console.WriteLine($"Reversed Number: {reversedNumber}");
+            */
             #endregion
 
+            #region 6- Write a program in C# Sharp to find prime numbers within a range of numbers.
+
+            Console.Write("Input starting number of range: ");
+            string startInput = Console.ReadLine();
+            Console.Write("Input ending number of range: ");
+            string endInput = Console.ReadLine();
+
+            if (int.TryParse(startInput, out int start) && int.TryParse(endInput, out int end) && start > 0 && end > 0 && start <= end)
+            {
+                Console.WriteLine($"The prime numbers between {start} and {end} are:");
+                for (int i = start; i <= end; i++)
+                {
+                    if (IsPrime(i))
+                    {
+                        Console.Write(i + " ");
+                    }
+                }
+            }
+           
         }
+        static bool IsPrime(int num)
+        {
+            if (num < 2)
+            {
+                return false;
+            }
+            for (int i = 2; i <= Math.Sqrt(num); i++)
+            {
+                if (num % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        #endregion
+
     }
-}
+    }
+
