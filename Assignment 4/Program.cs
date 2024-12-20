@@ -103,7 +103,7 @@
             #endregion
 
             #region 6- Write a program in C# Sharp to find prime numbers within a range of numbers.
-
+            /*
             Console.Write("Input starting number of range: ");
             string startInput = Console.ReadLine();
             Console.Write("Input ending number of range: ");
@@ -137,8 +137,33 @@
             }
             return true;
         }
-        #endregion
+            */
+            #endregion
 
+
+            #region 8- . Write a program that prints an identity matrix using for loop, in other words takes a value n from the user and shows the identity table of size n * n.
+            Console.Write("Enter the size of the matrix (n): ");
+            int N = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    if (i == j)
+                    {
+                        Console.Write("1 ");
+                    }
+                    else
+                    {
+                        Console.Write("0 ");
+                    }
+                }
+
+                Console.WriteLine();
+            }
+            #endregion
+
+        }
     }
-    }
+}
 
